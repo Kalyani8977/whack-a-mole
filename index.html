@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        .page-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 89vh;
+            padding: 20px;
+            background-color: #000;
+            position: relative;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        .image-container {
+            position: relative;
+            width: 640px;
+            height: 360px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .background-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 15px;
+        }
+        .text-overlay {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            color: #fff;
+            position: absolute;
+            z-index: 1;
+            text-align: center;
+            max-width: 90%;
+            word-wrap: break-word;
+            padding: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+        }
+        .start-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #ff007f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .start-button:hover {
+            background-color: #ff00ff;
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="page-container">
+        <div class="image-container">
+            <img src="https://media.istockphoto.com/id/1264913028/vector/neon-glowing-rectangle-frame-for-banner-on-dark-empty-grunge-brick-background.jpg?s=612x612&w=0&k=20&c=DViK1r53LgKi73wuxsu191rnQI2a1nMdSCty8PMEJVU=" class="background-image">
+            <div class="text-overlay">Welcome to WHACK-A-MOLE-GAME</div>
+            <button class="start-button" onclick="navigateToGame()">Start Game</button>
+        </div>
+    </div>
+    <script>
+        // function navigateToGame() {
+        //     window.location.href = "whack-a-mole.html";
+        // }
+//         function navigateToGame() {
+//     window.location.href = "correct-file-path/whack-a-mole.html";
+// }
+
+    </script>
+</body>
+</html> 
+
+  
+  
+
+
+     
